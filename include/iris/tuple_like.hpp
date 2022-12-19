@@ -5,6 +5,9 @@
 #include <utility>
 
 namespace iris::_tuple_like {
+  // tuple_like
+  // https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/p2165r3.pdf
+
   template <auto>
   void get(auto&) = delete;
   template <auto>
