@@ -1,8 +1,8 @@
 var indexSectionsWithContent =
 {
-  0: "<fitv",
-  1: "itv",
-  2: "f",
+  0: "<fhitv",
+  1: "hitv",
+  2: "ft",
   3: "<",
   4: "i"
 };
