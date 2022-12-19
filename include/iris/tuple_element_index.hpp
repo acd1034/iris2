@@ -5,6 +5,10 @@
 #include <variant>
 
 namespace iris::detail {
+  // tuple_element_index
+  // https://github.com/llvm/llvm-project/blob/main/libcxx/include/__tuple/tuple_element.h
+  // https://github.com/boostorg/hana/blob/944f7177e12c0546b91f58e5f80f054907225739/include/boost/hana/detail/type_at.hpp
+
   template <std::size_t I, class T>
   struct indexed {};
 
@@ -17,8 +21,6 @@ namespace iris::detail {
   template <class T, std::size_t I>
   std::integral_constant<std::size_t, I>
   get_index(const indexed<I, T>&); // undefined
-
-  // tuple_element_index
 
   template <class T, class Tuple>
   struct tuple_element_index;
